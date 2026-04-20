@@ -3,46 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TechStore</title>
+<title>Tienda Gaming</title>
 
-<!-- Enlace al CSS -->
-<link rel="stylesheet" href="css/styles.css">  
+<link rel="stylesheet" href="/css/paginaprincipal.css">
+<link rel="" href="/js/carrito.js"
 
 </head>
-
 <body>
 
-<!-- ===== CARRUSEL ===== -->
-<section class="carousel-container">
-    <div class="carousel-box">
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">🎮</div>
+  <div class="nav-links">
+    <a href="#">Página Principal</a>
+    <a href="#">Método de Pago</a>
+    <a href="#">Juegos</a>
+    <a href="#">Item</a>
+    <a href="#">Item</a>
+    <span style="color:#ccc;">›</span>
+  </div>
+  <button class="cart-btn">
+    🛒 <span class="cart-count" id="cartCount">0</span>
+  </button>
+</nav>
 
-        <div class="carousel-track" id="track">
-            
-            <div class="carousel-item">
-                <h2>🔥 Oferta del día</h2>
-                <p>Pilas recargables de larga duración</p>
-                <button>Ver más</button>
-            </div>
+<!-- CAROUSEL -->
+<div class="carousel-section">
+  <div class="carousel-track" id="carouselTrack">
 
-            <div class="carousel-item">
-                <h2>📷 Seguridad Inteligente</h2>
-                <p>Cámaras Wi-Fi con visión nocturna</p>
-                <button>Ver más</button>
-            </div>
-
-            <div class="carousel-item">
-                <h2>🔌 Conectividad Total</h2>
-                <p>Cables y adaptadores para todo</p>
-                <button>Ver más</button>
-            </div>
-
-        </div>
-
-        <button class="btn prev" onclick="moveSlide(-1)">❮</button>
-        <button class="btn next" onclick="moveSlide(1)">❯</button>
-
+    <div class="slide slide-1">
+      <div class="slide-deco">🏝️</div>
+      <div class="slide-content">
+        <div class="badge-top">NEW HORIZONS</div>
+        <h2>Animal<br>Crossing</h2>
+        <p>¡Tu isla, tu vida, tus reglas!</p>
+        <div class="slide-badge">Free Update Ver. 3.0 ✨</div>
+      </div>
     </div>
-</section>
+
+    <div class="slide slide-2">
+      <div class="slide-deco">🎮</div>
+      <div class="slide-content">
+        <h2>Nintendo DS<br>Collection</h2>
+        <p>Los clásicos que nunca olvidarás</p>
+        <div class="slide-badge">¡Descuentos hasta 20% OFF!</div>
+      </div>
+    </div>
+
+    <div class="slide slide-3">
+      <div class="slide-deco">🕹️</div>
+      <div class="slide-content">
+        <h2>Accesorios<br>Oficiales</h2>
+        <p>Controles, headsets y más</p>
+        <div class="slide-badge">🔥 Nuevos en stock</div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-btn prev-btn" onclick="movePrev()">‹</button>
+  <button class="carousel-btn next-btn" onclick="moveNext()">›</button>
+
+  <div class="dots">
+    <div class="dot active" onclick="goTo(0)"></div>
+    <div class="dot" onclick="goTo(1)"></div>
+    <div class="dot" onclick="goTo(2)"></div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<div class="section-title">🎮 Disponible Ahora</div>
+
+<div class="products-grid">
+  <!-- (tus cards quedan igual, no cambia nada) -->
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <h4>Tienda</h4>
+    <p>Dirección: Complejo Op. Cl.</p>
+  </div>
+  <div>
+    <h4>Soporte</h4>
+    <ul>
+      <li>Contacto</li>
+    </ul>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 
