@@ -1,362 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechStore — Tecnología para tu vida</title>
-    <link rel="stylesheet" href="paginaprincipal.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Barlow+Condensed:wght@500;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechStore</title>
+
+<!-- Enlace al CSS -->
+<link rel="stylesheet" href="css/styles.css">  
+
 </head>
+
 <body>
- 
-<!-- ===== HEADER ===== -->
-<header class="header">
-    <div class="header-top">
-        <div class="logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#00aaff"/><path d="M8 16 Q16 6 24 16 Q16 26 8 16Z" fill="#fff" opacity="0.9"/></svg>
-            <span class="logo-text">TechStore</span>
-        </div>
-        <div class="search-bar">
-            <input type="text" placeholder="Buscar productos, marcas y más…">
-            <button class="search-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            </button>
-        </div>
-        <div class="header-actions">
-            <a href="#" class="action-link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                <span>Ingresar</span>
-            </a>
-            <a href="#" class="cart-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-                <span>Mi Carrito</span>
-                <span class="cart-badge">0</span>
-            </a>
-        </div>
-    </div>
-    <nav class="nav">
-        <a href="#" class="nav-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            Smart Home
-        </a>
-        <a href="#" class="nav-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"/><polyline points="17 2 12 7 7 2"/></svg>
-            TV y Video
-        </a>
-        <a href="#" class="nav-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-            Audio
-        </a>
-        <a href="#" class="nav-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-            Cables
-        </a>
-        <a href="#" class="nav-link">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            Seguridad
-        </a>
-        <a href="#" class="nav-link nav-new">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            Lo Nuevo
-        </a>
-        <a href="#" class="nav-link nav-stores">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Tiendas
-        </a>
-    </nav>
-</header>
- 
-<!-- ===== PROMO BANNER ===== -->
-<div class="promo-banner">
-    <span>💬 Solicita una <strong>cotización</strong>, información o <strong>deja tus comentarios</strong></span>
-    <a href="#" class="promo-cta">CLICK AQUÍ</a>
-</div>
- 
-<!-- ===== HERO CAROUSEL ===== -->
-<section class="carousel-section">
-    <div class="carousel" id="carousel">
-        <div class="carousel-track" id="carouselTrack">
-            <!-- Slide 1 -->
-            <div class="slide slide-1">
-                <div class="slide-content">
-                    <p class="slide-tag">¡Oferta del día!</p>
-                    <h2>Se agota el día,<br><strong>tu energía no</strong></h2>
-                    <p class="slide-desc">Pilas recargables AA y AAA de larga duración. Potencia que dura.</p>
-                    <a href="#" class="slide-btn">VER MÁS →</a>
-                </div>
-                <div class="slide-image slide-image-1">
-                    <div class="battery-visual">
-                        <div class="battery-pack">
-                            <div class="battery b1"></div>
-                            <div class="battery b2"></div>
-                            <div class="battery b3"></div>
-                        </div>
-                        <div class="charger"></div>
-                    </div>
-                </div>
+
+<!-- ===== CARRUSEL ===== -->
+<section class="carousel-container">
+    <div class="carousel-box">
+
+        <div class="carousel-track" id="track">
+            
+            <div class="carousel-item">
+                <h2>🔥 Oferta del día</h2>
+                <p>Pilas recargables de larga duración</p>
+                <button>Ver más</button>
             </div>
- 
-            <!-- Slide 2 -->
-            <div class="slide slide-2">
-                <div class="slide-content">
-                    <p class="slide-tag">Seguridad Inteligente</p>
-                    <h2>Vigila tu hogar<br><strong>desde cualquier lugar</strong></h2>
-                    <p class="slide-desc">Cámaras Wi-Fi interior y exterior con visión nocturna y app móvil.</p>
-                    <a href="#" class="slide-btn">VER MÁS →</a>
-                </div>
-                <div class="slide-image slide-image-2">
-                    <div class="camera-visual">
-                        <div class="cam-body"></div>
-                        <div class="cam-lens"></div>
-                        <div class="cam-scan"></div>
-                    </div>
-                </div>
+
+            <div class="carousel-item">
+                <h2>📷 Seguridad Inteligente</h2>
+                <p>Cámaras Wi-Fi con visión nocturna</p>
+                <button>Ver más</button>
             </div>
- 
-            <!-- Slide 3 -->
-            <div class="slide slide-3">
-                <div class="slide-content">
-                    <p class="slide-tag">Entretenimiento</p>
-                    <h2>Conecta todo<br><strong>con un solo cable</strong></h2>
-                    <p class="slide-desc">Cables USB-C, HDMI y adaptadores para todos tus dispositivos.</p>
-                    <a href="#" class="slide-btn">VER MÁS →</a>
-                </div>
-                <div class="slide-image slide-image-3">
-                    <div class="cable-visual">
-                        <div class="cable c1"></div>
-                        <div class="cable c2"></div>
-                        <div class="plug"></div>
-                    </div>
-                </div>
+
+            <div class="carousel-item">
+                <h2>🔌 Conectividad Total</h2>
+                <p>Cables y adaptadores para todo</p>
+                <button>Ver más</button>
             </div>
+
         </div>
- 
-        <button class="carousel-arrow arrow-prev" id="prevBtn">&#8249;</button>
-        <button class="carousel-arrow arrow-next" id="nextBtn">&#8250;</button>
- 
-        <div class="carousel-dots" id="carouselDots">
-            <span class="dot active" data-index="0"></span>
-            <span class="dot" data-index="1"></span>
-            <span class="dot" data-index="2"></span>
-        </div>
+
+        <button class="btn prev" onclick="moveSlide(-1)">❮</button>
+        <button class="btn next" onclick="moveSlide(1)">❯</button>
+
     </div>
 </section>
- 
-<!-- ===== PROMO CARDS ===== -->
-<section class="promo-cards">
-    <div class="promo-card">
-        <div class="promo-card-inner">
-            <p class="promo-label">Llévate 2 Cámaras Wi-Fi<br>por un precio especial</p>
-            <h4>Cámaras Interior</h4>
-            <div class="promo-img promo-cam-in"></div>
-        </div>
-    </div>
-    <div class="promo-card">
-        <div class="promo-card-inner">
-            <p class="promo-label">Llévate 2 Cámaras Wi-Fi<br>por un precio especial</p>
-            <h4>Cámaras Exterior</h4>
-            <div class="promo-img promo-cam-out"></div>
-        </div>
-    </div>
-    <div class="promo-card promo-discount">
-        <div class="promo-card-inner">
-            <div class="discount-badge"><span>20</span><sup>%</sup> OFF</div>
-            <h4>Cerraduras digitales</h4>
-            <p class="promo-sub">producto seleccionado</p>
-            <div class="promo-img promo-lock"></div>
-        </div>
-    </div>
-    <div class="promo-card promo-discount">
-        <div class="promo-card-inner">
-            <div class="discount-badge"><span>20</span><sup>%</sup> OFF</div>
-            <h4>Videotimbres</h4>
-            <p class="promo-sub">producto seleccionado</p>
-            <div class="promo-img promo-doorbell"></div>
-        </div>
-    </div>
-</section>
- 
-<!-- ===== PRODUCTS SECTION ===== -->
-<section class="products-section">
-    <div class="section-header">
-        <h2 class="section-title">¡LO MEJOR DE LA TEMPORADA!</h2>
-        <a href="#" class="see-more">Ver más</a>
-    </div>
-    <div class="products-grid">
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-1"></div>
-                <div class="product-badge">Más vendido</div>
-            </div>
-            <div class="stars">★★★★☆ <span>(145)</span></div>
-            <p class="product-name">Ahuyentador ultrasónico de plagas</p>
-            <p class="product-price">₡9.900,01</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-2"></div>
-            </div>
-            <div class="stars">★★★★★ <span>(38)</span></div>
-            <p class="product-name">Memoria USB dual, tipo C y A, de 64 GB</p>
-            <p class="product-price">₡18.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-3"></div>
-                <div class="product-badge product-badge-sale">Oferta</div>
-            </div>
-            <div class="stars">★★★★★ <span>(18)</span></div>
-            <p class="product-name">Antena compacta UHF con base de imán y booster de 20 dB</p>
-            <p class="product-price">₡7.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-4"></div>
-            </div>
-            <div class="stars">★★★☆☆ <span>(49)</span></div>
-            <p class="product-name">Cable USB C a HDMI, de 2 m</p>
-            <p class="product-price">₡9.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-5"></div>
-            </div>
-            <div class="stars">★★★★☆ <span>(22)</span></div>
-            <p class="product-name">Extensor HDMI, de 50 m</p>
-            <p class="product-price">₡17.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-    </div>
-</section>
- 
-<!-- ===== CATEGORY BANNERS ===== -->
-<section class="category-banners">
-    <div class="cat-banner cat-security">
-        <p>Monitorea tu hogar desde<br>la palma de tu mano</p>
-    </div>
-    <div class="cat-banner cat-audio">
-        <p>Versatilidad y calidad<br>de audio</p>
-    </div>
-    <div class="cat-banner cat-entertainment">
-        <p>Entretenimiento<br>garantizado</p>
-    </div>
-    <div class="cat-banner cat-wifi">
-        <p>Wi-Fi hasta el<br>último rincón</p>
-    </div>
-</section>
- 
-<!-- ===== NEW PRODUCTS ===== -->
-<section class="products-section">
-    <div class="section-header">
-        <h2 class="section-title">¡DESCUBRE LO NUEVO!</h2>
-        <a href="#" class="see-more">Ver más</a>
-    </div>
-    <div class="products-grid">
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-6"></div>
-                <div class="product-badge product-badge-new">Nuevo</div>
-            </div>
-            <div class="stars">★★★★★ <span>(5)</span></div>
-            <p class="product-name">Control de acceso facial y huella dactilar</p>
-            <p class="product-price">₡49.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-7"></div>
-                <div class="product-badge product-badge-new">Nuevo</div>
-            </div>
-            <div class="stars">★★★★☆ <span>(8)</span></div>
-            <p class="product-name">Parlante inteligente con asistente de voz</p>
-            <p class="product-price">₡24.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-8"></div>
-                <div class="product-badge product-badge-new">Nuevo</div>
-            </div>
-            <div class="stars">★★★★★ <span>(12)</span></div>
-            <p class="product-name">Reloj despertador digital con cargador inalámbrico</p>
-            <p class="product-price">₡14.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-9"></div>
-                <div class="product-badge product-badge-new">Nuevo</div>
-            </div>
-            <div class="stars">★★★★☆ <span>(3)</span></div>
-            <p class="product-name">Mini proyector portátil Full HD con Wi-Fi</p>
-            <p class="product-price">₡89.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-        <div class="product-card">
-            <div class="product-img-wrap">
-                <div class="product-img prod-img-10"></div>
-                <div class="product-badge product-badge-new">Nuevo</div>
-            </div>
-            <div class="stars">★★★★★ <span>(7)</span></div>
-            <p class="product-name">Purificador de aire con filtro HEPA y control app</p>
-            <p class="product-price">₡34.900,00</p>
-            <button class="buy-btn">COMPRAR AHORA</button>
-        </div>
- 
-    </div>
-</section>
- 
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-brand">
-            <div class="logo">
-                <svg width="28" height="28" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#00aaff"/><path d="M8 16 Q16 6 24 16 Q16 26 8 16Z" fill="#fff" opacity="0.9"/></svg>
-                <span class="logo-text">TechStore</span>
-            </div>
-            <p>Tecnología para tu vida diaria.<br>Los mejores productos al mejor precio.</p>
-        </div>
-        <div class="footer-links">
-            <h5>Categorías</h5>
-            <a href="#">Smart Home</a>
-            <a href="#">TV y Video</a>
-            <a href="#">Audio</a>
-            <a href="#">Cables</a>
-            <a href="#">Seguridad</a>
-        </div>
-        <div class="footer-links">
-            <h5>Ayuda</h5>
-            <a href="#">Contacto</a>
-            <a href="#">Cotizaciones</a>
-            <a href="#">Garantías</a>
-            <a href="#">Tiendas</a>
-        </div>
-        <div class="footer-links">
-            <h5>Legal</h5>
-            <a href="#">Privacidad</a>
-            <a href="#">Términos</a>
-            <a href="#">Devoluciones</a>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© 2026 TechStore. Todos los derechos reservados.</p>
-    </div>
-</footer>
- 
+
+<script src="script.js"></script>
+
 </body>
 </html>
