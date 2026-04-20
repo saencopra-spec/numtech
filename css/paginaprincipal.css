@@ -1,7 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url(../img/background.png);
+    /* background-image: url(../img/background.png); */
+    background-color: #0ea5e9;
 }
 
 /* CARRUSEL */
