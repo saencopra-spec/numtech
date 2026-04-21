@@ -4,11 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tienda Gaming</title>
-
 <link rel="stylesheet" href="/css/paginaprincipal.css">
-<link rel="" href="/js/carrito.js"
-
 </head>
+
 <body>
 
 <!-- NAV -->
@@ -18,8 +16,6 @@
     <a href="#">Página Principal</a>
     <a href="#">Método de Pago</a>
     <a href="#">Juegos</a>
-    <a href="#">Item</a>
-    <a href="#">Item</a>
     <span style="color:#ccc;">›</span>
   </div>
   <button class="cart-btn">
@@ -30,35 +26,15 @@
 <!-- CAROUSEL -->
 <div class="carousel-section">
   <div class="carousel-track" id="carouselTrack">
-
     <div class="slide slide-1">
-      <div class="slide-deco">🏝️</div>
-      <div class="slide-content">
-        <div class="badge-top">NEW HORIZONS</div>
-        <h2>Animal<br>Crossing</h2>
-        <p>¡Tu isla, tu vida, tus reglas!</p>
-        <div class="slide-badge">Free Update Ver. 3.0 ✨</div>
-      </div>
+      <img src="/img/animal crossing.png" id="imagen1">
     </div>
-
     <div class="slide slide-2">
-      <div class="slide-deco">🎮</div>
-      <div class="slide-content">
-        <h2>Nintendo DS<br>Collection</h2>
-        <p>Los clásicos que nunca olvidarás</p>
-        <div class="slide-badge">¡Descuentos hasta 20% OFF!</div>
-      </div>
+      <img src="/img/Ofertas.png" id="imagen1">
     </div>
-
     <div class="slide slide-3">
-      <div class="slide-deco">🕹️</div>
-      <div class="slide-content">
-        <h2>Accesorios<br>Oficiales</h2>
-        <p>Controles, headsets y más</p>
-        <div class="slide-badge">🔥 Nuevos en stock</div>
-      </div>
+      <img src="/img/nintengo.png" id="imagen1">
     </div>
-
   </div>
 
   <button class="carousel-btn prev-btn" onclick="movePrev()">‹</button>
@@ -72,11 +48,108 @@
 </div>
 
 <!-- PRODUCTS -->
-<div class="section-title">🎮 Disponible Ahora</div>
+<div class="section-title">Disponible Ahora</div>
 
 <div class="products-grid">
-  <!-- (tus cards quedan igual, no cambia nada) -->
+
+  <!-- Animal Crossing -->
+  <div class="product-card">
+    <div class="product-img-wrap">
+      <div class="product-img-placeholder">
+        <img src="/img/animal crossing juego.jpeg" alt="Animal Crossing">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="product-brand">Nintendo</div>
+      <div class="product-name">Animal Crossing: New Horizons</div>
+      <div class="product-code">NSW-ACNH-001</div>
+      <div class="product-price">$59.99</div>
+    </div>
+    <button class="add-cart-btn" onclick="addToCart(this)">ADD TO CART</button>
+  </div>
+
+  <!-- Mario Odyssey -->
+  <div class="product-card">
+    <div class="product-img-wrap">
+      <div class="product-img-placeholder">
+        <img src="/img/marioodessy.jpeg" alt="Mario Odyssey">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="product-brand">Nintendo</div>
+      <div class="product-name">Super Mario Odyssey</div>
+      <div class="product-code">NSW-SMO-002</div>
+      <div class="product-price">$59.99</div>
+    </div>
+    <button class="add-cart-btn" onclick="addToCart(this)">ADD TO CART</button>
+  </div>
+
+  <!-- Zelda -->
+  <div class="product-card">
+    <div class="product-img-wrap">
+      <div class="product-img-placeholder">
+        <img src="/img/Zelda.jpeg" alt="Zelda">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="product-brand">Nintendo</div>
+      <div class="product-name">The Legend of Zelda: Breath of the Wild</div>
+      <div class="product-code">NSW-ZELDA-003</div>
+      <div class="product-price">$59.99</div>
+    </div>
+    <button class="add-cart-btn" onclick="addToCart(this)">ADD TO CART</button>
+  </div>
+
+  <!-- Mario Galaxy -->
+  <div class="product-card">
+    <div class="product-img-wrap">
+      <div class="product-img-placeholder">
+        <img src="/img/supermariogalaxy.jpeg" alt="Super Mario Galaxy">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="product-brand">Nintendo</div>
+      <div class="product-name">Super Mario Galaxy</div>
+      <div class="product-code">WII-SMG-004</div>
+      <div class="product-price">$49.99</div>
+    </div>
+    <button class="add-cart-btn" onclick="addToCart(this)">ADD TO CART</button>
+  </div>
+
+  <!-- Crash -->
+  <div class="product-card">
+    <div class="product-img-wrap">
+      <div class="product-img-placeholder">
+        <img src="/img/crash.jpeg" alt="Crash Bandicoot">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="product-brand">Activision</div>
+      <div class="product-name">Crash Bandicoot N. Sane Trilogy</div>
+      <div class="product-code">PS4-CB-005</div>
+      <div class="product-price">$39.99</div>
+    </div>
+    <button class="add-cart-btn" onclick="addToCart(this)">ADD TO CART</button>
+  </div>
+
+  <!-- Mario Kart -->
+  <div class="product-card">
+    <div class="product-img-wrap">
+      <div class="product-img-placeholder">
+        <img src="/img/mariokartdeluxe.jpeg" alt="Mario Kart 8 Deluxe">
+      </div>
+    </div>
+    <div class="product-info">
+      <div class="product-brand">Nintendo</div>
+      <div class="product-name">Mario Kart 8 Deluxe</div>
+      <div class="product-code">NSW-MK8-006</div>
+      <div class="product-price">$59.99</div>
+    </div>
+    <button class="add-cart-btn" onclick="addToCart(this)">ADD TO CART</button>
+  </div>
+
 </div>
+<!-- ✅ Cierre del products-grid -->
 
 <!-- FOOTER -->
 <footer>
@@ -92,7 +165,7 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="/js/carrito.js"></script>
 
 </body>
 </html>
