@@ -24,9 +24,9 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    background: rgba(255, 255, 255, 0.7); /* Efecto translúcido superior */
+    background: rgba(255, 255, 255, 0.7); 
     backdrop-filter: blur(5px);
-    border-radius: 0 0 50px 50px; /* Curva característica del diseño */
+    border-radius: 0 0 50px 50px; 
     margin: 0 auto;
     width: 95%;
 }
@@ -47,7 +47,7 @@ body {
     font-size: 1.5rem;
 }
 
-/* --- CONTENEDOR LOGIN --- */
+
 .login-container {
     flex: 1;
     display: flex;
@@ -139,7 +139,7 @@ body {
     margin-bottom: 4px;
 }
 
-/* Ajuste rápido para los errores en el HTML original */
+
 .footer-column div {
-    display: none; /* Oculta el div 'class' sobrante */
+    display: none;
 }

@@ -21,18 +21,18 @@ body {
 }
 
 .product-card {
-  height: 320px; /* altura fija igual para todas */
+  height: 320px; 
   
 }
 
 .product-img-wrap {
   height: 160px;
-  flex-shrink: 0; /* que no se comprima */
+  flex-shrink: 0; 
 }
 
 .product-info {
   flex: 1;
-  overflow: hidden; /* evita que texto largo rompa el layout */
+  overflow: hidden; 
 }
 
 /* NAV */
