@@ -1,3 +1,145 @@
+
+/* Importamos fuentes que imitan el estilo de la imagen */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background-image: url(../img/background.png);
+    /* Reemplaza 'tu-fondo.jpg' por el nombre real de tu imagen */
+    background: url('img/background.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background: rgba(255, 255, 255, 0.7); /* Efecto translúcido superior */
+    backdrop-filter: blur(5px);
+    border-radius: 0 0 50px 50px; /* Curva característica del diseño */
+    margin: 0 auto;
+    width: 95%;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: #4a4a4a;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+}
+
+/* --- CONTENEDOR LOGIN --- */
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.login-card {
+    background-color: rgba(233, 185, 206, 0.9); /* Rosa con ligera transparencia */
+    width: 90%;
+    max-width: 800px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+}
+
+.login-card h1 {
+    font-family: 'Courier Prime', monospace; /* Estilo retro de la imagen */
+    font-size: 3.5rem;
+    color: #5d1a1a;
+    margin-bottom: 40px;
+    letter-spacing: -2px;
+}
+
+/* --- FORMULARIO --- */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group label {
+    font-family: 'Courier Prime', monospace;
+    font-weight: bold;
+    color: #5d1a1a;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+
+.login-btn {
+    background-color: #5d1a1a;
+    color: white;
+    font-family: 'Courier Prime', monospace;
+    padding: 8px 45px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #431212;
+}
+
+/* --- FOOTER --- */
+.site-footer {
+    background-color: #e9b9ce;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 10%;
+    color: #5d1a1a;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 4px;
+}
+
+/* Ajuste rápido para los errores en el HTML original */
+.footer-column div {
+    display: none; /* Oculta el div 'class' sobrante */
 }
