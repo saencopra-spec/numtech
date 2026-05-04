@@ -1,17 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compra</title>
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet" href="/css/carrito.css">
 </head>
-<header>
-
-</header>
 <body>
-    
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="barra-de-navegacion">
+            <a href="/html/productos.html">Pagina principal</a>
+            <a href="/html/index.html">Login</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Metodo de pago</a>
+            <a href="#">Item</a>
+            <button class="btn-siguiente">&#8250;</button>
+        </nav>
+        <div class="cart-icon">🛒</div>
+    </header>
+
+    <main class="carrito-main">
+        <div class="carrito-contenedor">
+
+            <!-- Panel Izquierdo: Lista de productos -->
+            <section class="panel-izquierdo">
+                <div class="carrito-titulo">
+                    <span class="icono-carrito">🛒</span>
+                </div>
+
+                <div id="lista-productos">
+                    <!-- Los productos se insertan dinámicamente con JS -->
+                </div>
+
+                <div class="carrito-total">
+                    <span class="total-label">Total:</span>
+                    <span class="total-monto" id="total-monto">0$</span>
+                </div>
+            </section>
+
+            <!-- Separador vertical -->
+            <div class="separador-vertical"></div>
+
+            <!-- Panel Derecho: Formulario de pago -->
+            <section class="panel-derecho">
+
+                <div class="campo-grupo">
+                    <label class="campo-label">E-mail</label>
+                    <input type="email" class="campo-input" id="email" placeholder="">
+                </div>
+
+                <div class="campo-grupo">
+                    <label class="campo-label">Tarjeta</label>
+                    <div class="iconos-tarjeta">
+                        <img src="img/bac.png" alt="BAC" onerror="this.style.display='none'">
+                        <img src="img/applepay.png" alt="Apple Pay" onerror="this.style.display='none'">
+                        <img src="img/visa.png" alt="VISA" onerror="this.style.display='none'">
+                        <img src="img/mastercard.png" alt="Mastercard" onerror="this.style.display='none'">
+                        <!-- Fallback texto si no cargan imágenes -->
+                        <span class="tag-tarjeta bac">BAC</span>
+                        <span class="tag-tarjeta apple">Apple Pay</span>
+                        <span class="tag-tarjeta visa">VISA</span>
+                        <span class="tag-tarjeta master">●●</span>
+                    </div>
+                    <input type="text" class="campo-input" id="numero-tarjeta" placeholder="1234 1234 1234 1234" maxlength="19">
+                    <div class="fila-dos-campos">
+                        <input type="text" class="campo-input" id="fecha-tarjeta" placeholder="MM / YY" maxlength="7">
+                        <input type="text" class="campo-input" id="cvc-tarjeta" placeholder="CVC" maxlength="4">
+                    </div>
+                </div>
+
+                <div class="campo-grupo">
+                    <label class="campo-label">nombre de la tarjeta</label>
+                    <input type="text" class="campo-input" id="nombre-tarjeta" placeholder="">
+                </div>
+
+                <button class="btn-pagar" id="btn-pagar">Pagar</button>
+
+            </section>
+
+            <!-- Logo NomTech -->
+            <div class="logo-nomtech">
+                <div class="logo-circulo">
+                    <img src="img/logo-nomtech.png" alt="NomTech" onerror="this.outerHTML='<div class=\'logo-texto\'>NomTech<br><small>Tu Secreto Dulce para la Diversión</small></div>'">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h3>Tienda</h3>
+            <p>Dirección: Complejo Ctp Cit</p>
+            <p><strong>Horario:</strong><br>
+               De Lunes a Viernes de 9:30 am a 6:30 pm y Sábados de 9:00 am a 5:00 pm</p>
+            <p><strong>Servicios:</strong><br>
+               • Soporte Técnico<br>
+               • Venta de juegos</p>
+        </div>
+        <div class="footer-column">
+            <h3>Soporte</h3>
+            <ul>
+                <li>• Contacto</li>
+                <li>• Sobre nosotros</li>
+                <li>• Garantía</li>
+                <li>• Términos y Condiciones</li>
+                <li>• Métodos de envío y pagos</li>
+                <li>• Confidencialidad</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Perfil</h3>
+            <ul>
+                <li>• Mi Cuenta</li>
+                <li>• Carrito</li>
+                <li>• Comprar</li>
+                <li>• Rastrear Orden</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="./js/carrito.js"></script>
 </body>
-<footer>
-    
-</footer>
 </html>
